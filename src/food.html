@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato|Nanum+Gothic:700|Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="style.js"></script>
+
+    <title>Food Page</title>
+</head>
+<body>    
+ 
+    <!-- NAVIGATION BAR -->
+    <header id="topHeader"> 
+        <nav>
+            <span class="logo">Travel</span><span style="color: rebeccapurple; font-size: 38px;">Tunisia</span>
+            <div class="menu-btn-3" onclick="menuBtnFunction(this)">
+                <span></span>
+            </div>
+            <div class="mainMenu">
+                <a href="index.html"><span>Home</span></a>
+                <a href="food.html"><span>Local Delicacies</span></a>
+                <a href="place.html"><span>Tourist Attractions</span></a>
+                <a href="#address">Contact Us</a>
+            </div class="mainMenu">
+        </nav>
+    </header>
+
+    <!-- SEARCH FOOD LIST SECTION -->
+    <section id="delivery">
+        <center>
+        <h1 class="sec-heading">Find Local Delicacies Here</h1>
+        <div class="col-7">
+            <h2> Select Your Dish Here</h2>
+            <form method="POST" id="foodForm">
+                <select type="text" id="food" placeholder="Pick One Dish">
+                  <option value="Chakchouka">Chakchouka</option>
+                  <option value="Leblebi Soup">Leblebi Soup</option>
+                  <option value="Tunisian Orange Cake">Tunisian Orange Cake</option>
+                  <option value="Keleya Zaara">Keleya Zaara</option>
+                  <option value="Kafteji">Kafteji</option>
+                </select>
+                <br><br>
+                <input class="brand-btn" id="postSubmit" type="submit" value="Search Recipe" />
+              </form>
+            </div>
+        </div>
+        </center>
+    </section>
+
+    <section id="delivery">
+        <div id="foodContainer"></div>
+    </section>
+    
+    <!-- FOOTER SECTION -->
+    <footer>
+        <center>
+       <div class="row">
+                <div id="address">
+                    <span class="footer-cat">Office Location</span>
+                    <ul>
+                        <li>
+                            <i class="far fa-building"></i>
+                            <div>Cite Air Nouvelle<br/>
+                              59 Rue de Marrakech,Governorate Monastir,5025 Nouvelle,Tunisia
+                              </div>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>+6014 8765432</li>
+                        <li>travelTunisia@mail.com</li>
+                    </ul>
+                </div>
+                
+            </div>
+       </div>
+       </center>
+       <div id="copyright">
+           travelTunisia &copy; All Rights Reserved 2023
+       </div>
+       <a href="#topHeader" id="gotop">Top</a>
+    </footer>
+
+    <script src="food.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="ScriptIT.js"></script>
+    
+</body>
+</html>

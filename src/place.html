@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato|Nanum+Gothic:700|Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="style.js"></script>
+    <title>Destination Page</title>
+</head>
+<body>    
+    
+    <header id="topHeader"> 
+        <nav>
+            <span class="logo">Travel</span><span style="color: rebeccapurple; font-size: 38px;">Tunisia</span>
+            <div class="menu-btn-3" onclick="menuBtnFunction(this)">
+                <span></span>
+            </div>
+            <div class="mainMenu">
+                <a href="index.html"><span>Home</span></a>
+                <a href="food.html"><span>Local Delicacies</span></a>
+                <a href="place.html"><span>Tourist Attractions</span></a>
+                <a href="#address">Contact Us</a>
+            </div class="mainMenu">
+        </nav>
+    </header>
+
+        <!-- TUNISIA WEATHER,TIMEZONE,ETC SECTION -->
+        <center>
+        <section id="delivery">
+            <h1 class="sec-heading">Tunisia Weather and Time Info</h1>
+            <div class="col-8">
+                    <h2 id="city"></h2>
+                    <p id="time"></p>
+                    <p id="temperature"></p>
+                    <p id="humidity"></p>
+                    <p id="windspeed"></p>
+                    <p id="weather"></p>
+                <script src="weather.js"></script>   
+        </section>
+    </center>
+
+    <section>
+
+    </section>
+    <!-- PICK TUNISIA ATTRACTION AND DISPLAY SECTION -->
+    <section id="delivery">
+        <center>
+        <h1 class="sec-heading">Find Tunisia Attractions Here</h1>
+        <div class="col-7">
+            <h2> Select The Destination</h2>
+            <form method="POST" id="placeForm">
+              <select type="text" id="place" placeholder="Pick One Place">
+                <option value="Tunis">Tunis</option>
+                <option value="Djerba">Djerba Island</option>
+                <option value="Hammamet">Hammamet</option>
+                <option value="Sousse">Sousse</option>
+                <option value="Monastir">Monastir</option>
+              </select><br><br>
+              <input class="brand-btn" id="postSubmit" type="submit" value="Search" />
+            </form>
+          </div>
+        </center>
+    </section>
+
+    <center>
+    <section id="delivery">
+        <br>
+        <div id="placeContainer"></div>
+    </section>
+    </center>
+    
+    <footer>
+        <center>
+       <div class="row">
+                <div id="address">
+                    <span class="footer-cat">Office Location</span>
+                    <ul>
+                        <li>
+                            <i class="far fa-building"></i>
+                            <div>Cite Air Nouvelle<br/>
+                              59 Rue de Marrakech,Governorate Monastir,5025 Nouvelle,Tunisia
+                              </div>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>+6014 8765432</li>
+                        <li>travelTunisia@mail.com</li>
+                    </ul>
+                </div>
+                
+            </div>
+       </div>
+       </center>
+       <div id="copyright">
+           travelTunisia &copy; All Rights Reserved 2023
+       </div>
+       <a href="#topHeader" id="gotop">Top</a>
+    </footer>
+
+    <script src="place.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
+</body>
+</html>
